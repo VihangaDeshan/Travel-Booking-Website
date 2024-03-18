@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--refresh form-->
+    <script type="text/JavaScript" src="script.js"></script>
+    
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-light fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link-hover" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover" href="#contact">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-hover " href="packages.html">Book Package</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                        <a class="nav-link main-btn" href="login.php">Login</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+<br>
+<br>
+    <!-- Main Topic Section with Video Background Slideshow -->
+    <div id="main-topic-container">
+        <video id="video-background" autoplay loop muted poster="img/sl5.jpg">
+            <source id="video-source" type="video/mp4">
+            Your browser does not support the video tag. 
+        </video>
+        <div class="main-topic-content">
+            <h1 style="font-size: 64px; font-weight: bold; color:#fff;">Welcome to Travel World</h1>
+            <p style="font-size: 32px;font-style: italic;">Your Adventure Awaits</p>
+            <a href="packages.html" class="btn btn-primary btn-lg">Book a Package</a>
+        </div>
+    </div>
+    <br>
+
+<!-- About Us Section -->
+<section id="about" style="background-color: #ffffff; text-align: center;" class="py-5">
+    <br><div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6">
+                <h2>About Us</h2>
+                <p style="font-size: 18px;">
+                    At Travel World, we're passionate about exploring the world and creating unforgettable experiences for our fellow travelers. Our journey began with a simple idea: to help people discover the beauty of our planet and to make traveling accessible to all.
+
+                    With years of experience, a dedicated team, and a love for adventure, we've curated a selection of the most awe-inspiring destinations and crafted unique itineraries that cater to every traveler's desires.
+
+                    Whether you're a thrill-seeker looking for epic adventures, a culture enthusiast eager to immerse yourself in new traditions, or someone simply seeking relaxation in paradisiacal landscapes, we have something for everyone.
+
+                    We believe that the world is meant to be explored, and we're here to be your trusted guide on your incredible journey. Join us in discovering the wonders of Travel World and make memories that will last a lifetime.
+
+                    Your adventure awaits. Let's explore together.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <!-- Add your image source and alt text -->
+                <img src="img/logo.png" alt="About Us Image" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Destinations Section -->
+<section id="destinations" style="background-color: #f5f5f5;" class="py-5">
+    <br><div class="container">
+        <h2 class="text-center">Popular Destinations</h2>
+        <div class="row">
+            <!-- Destination Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/sl.png" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sri Lanka </h5>
+                        <p class="card-text">Explore the beauty of Sri Lanka with its stunning landscapes and rich culture.</p>
+                        <a href="https://en.wikipedia.org/wiki/Sri_Lanka" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/japan.jpg" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Japan </h5>
+                        <p class="card-text">Discover the hidden gems of Japan, from pristine beaches to vibrant markets.</p>
+                        <a href="https://en.wikipedia.org/wiki/Japan" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/korea.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Korea </h5>
+                        <p class="card-text">Immerse yourself in the rich history and natural beauty of Korea.</p>
+                        <a href="https://en.wikipedia.org/wiki/Korea" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Destination Card 4 -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="img/maldives.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives </h5>
+                        <p class="card-text">Experience the stunning beauty of the Maldives, with its crystal-clear waters and white sandy beaches.</p>
+                        <a href="https://en.wikipedia.org/wiki/Maldives" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Destination Card 5 -->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="img/paris.png" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris </h5>
+                        <p class="card-text">Discover the romance and charm of Paris, the City of Light.</p>
+                        <a href="https://en.wikipedia.org/wiki/Paris" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/New-Zealand.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">New Zealand</h5>
+                        <p class="card-text">Explore the breathtaking beauty of New Zealand, from its stunning landscapes to vibrant cities.</p>
+                        <a href="https://en.wikipedia.org/wiki/New_Zealand" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-5">
+   <br> <div class="container">
+        <h2 class="text-center">Photo Gallery</h2>
+        <div class="row">
+            <!-- Image 1 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/j1.jpg" data-lightbox="gallery" data-title="Image 1">
+                    <img src="img/j1.jpg" class="img-fluid rounded" alt="Image 1">
+                </a>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/sl1.jpg" data-lightbox="gallery" data-title="Image 2">
+                    <img src="img/sl1.jpg" class="img-fluid rounded" alt="Image 2">
+                </a>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/sl2.jpg" data-lightbox="gallery" data-title="Image 3">
+                    <img src="img/sl2.jpg" class="img-fluid rounded" alt="Image 3">
+                </a>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/k1.jpg" data-lightbox="gallery" data-title="Image 4">
+                    <img src="img/k1.jpg" class="img-fluid rounded" alt="Image 4">
+                </a>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/p.jpg" data-lightbox="gallery" data-title="Image 5">
+                    <img src="img/p.jpg" class="img-fluid rounded" alt="Image 5">
+                </a>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/sl3.jpg" data-lightbox="gallery" data-title="Image 6">
+                    <img src="img/sl3.jpg" class="img-fluid rounded" alt="Image 6">
+                </a>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/sl5.jpg" data-lightbox="gallery" data-title="Image 7">
+                    <img src="img/sl5.jpg" class="img-fluid rounded" alt="Image 7">
+                </a>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="col-md-3 mb-4">
+                <a href="img/j2.jpg" data-lightbox="gallery" data-title="Image 8">
+                    <img src="img/j2.jpg" class="img-fluid rounded" alt="Image 8">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- Contact Section -->
+<section id="contact" style="background-color:#d2d4dd;" class="py-5">
+   <br> <div class="container">
+    <div class="row align-items-center">
+        <h2>Contact Us</h2>
+        <div class="col-lg-6">
+        <form id="contact-form" action="contact.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+                <small id="nameError" class="form-text text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div> </form>
+            <div class="col-lg-6">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=487&amp;height=497&amp;hl=en&amp;q=Gampaha&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Unlimited</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:497px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:497px;}.gmap_iframe {height:497px!important;}</style></div>            </div>
+       
+        <div id="response-message" class="mt-3"></div>
+    </div>
+    
+</div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="footer-content">Contact Us</h4>
+                <p class="footer-content">
+                    Travel World<br>
+                    Putupagala<br>
+                    Dompe, Sri_Lanka<br>
+                    Email: contact@travelworld.com<br>
+                    Phone: +94772256752
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-content">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="packages.html">Book a Package</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-content">Follow Us</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    
+    <!-- Include Bootstrap JS (popper.js and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const videos = ["Videos/1.mp4", "Videos/2.mp4", "Videos/3.mp4"];
+        let currentVideo = 0;
+
+        function changeVideo() {
+            document.getElementById("video-source").src = videos[currentVideo];
+            document.getElementById("video-background").load();
+            document.getElementById("video-background").play();
+            currentVideo = (currentVideo + 1) % videos.length;
+        }
+
+        // Change the video every 7 seconds
+        setInterval(changeVideo, 20000);
+
+        // Initial video change
+        changeVideo();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const nameInput = document.getElementById('name');
+            const nameError = document.getElementById('nameError');
+
+            nameInput.addEventListener('input', function() {
+                let name = nameInput.value.trim();
+
+                if (/\d/.test(name)) {
+                    nameError.textContent = 'Numeric values are not allowed.';
+                    nameInput.value = '';
+                } else {
+                    nameError.textContent = '';
+                }
+            });
+        });
+    </script>
+     
+
+   
+</body>
+</html>

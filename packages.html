@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Add Google Fonts for Poppins -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+           body{
+            font-family: 'Poppins', sans-serif;
+            background-image: url('img/sl5.jpg'); /* Replace 'your-image.jpg' with your image file path */
+            /*background-size: cover; /* Ensure the background image covers the entire viewport */
+            backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+            -webkit-backdrop-filter: blur(5px); /* For some older browsers (Safari) */
+            background: -moz-element();
+           }
+          
+       
+    </style>
+    </style>
+</head>
+<body background="img/sl5.jpg">
+    <div class="container">
+        <h1 style="color: white; font-weight: bold; font-size: 64px; position: relative;">Travel Packages
+            <a href="index.html" class="btn btn-secondary" style="position: absolute; top: 20px; right: 0; ">Back</a>
+        </h1>
+        <div class="row" id="packages">
+            <!-- Packages will be displayed here -->
+        </div>
+    </div>
+    
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.get('get_packages.php', function (data) {
+                try {
+                    var packages = JSON.parse(data);
+                    var packagesContainer = $('#packages');
+                    packages.forEach(function (package) {
+                        var card = $(`
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm">
+                                    <img src="${package.image_url}" class="img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${package.name}</h5>
+                                        <p class="card-text">${package.description}</p>
+                                        <p class="card-text">$${package.price}</p>
+                                        <button class="btn btn-primary book-button">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        `);
+                        
+                        // Attach a click event to the "Book Now" button
+                        card.find('.book-button').click(function() {
+                            window.location.href = 'bookings.php?package_id=' + package.id;
+                        });
+    
+                        packagesContainer.append(card);
+                    });
+                } catch (e) {
+                    console.error('Error parsing JSON: ' + e);
+                    console.log('Raw response:', data);
+                }
+            });
+        });
+       
+
+    
+    </script>
+</body>
+</html>
